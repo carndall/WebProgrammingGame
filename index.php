@@ -5,7 +5,7 @@ require_once "helpers.php";
 $letters = range("a","z");
  
 $params = (object) $_REQUEST;
-print_r($params);
+// print_r($params);
  
 if (isset($params->guess)) {
   $answer = $params->answer;
