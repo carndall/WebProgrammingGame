@@ -1,25 +1,25 @@
 <?php
-require_once "words.php";
-require_once "helpers.php";
+require_once "../levels.php";
+require_once "../helpers.php";
  
 $letters = range("a","z");
  
 $params = (object) $_REQUEST;
-print_r($params);
+// print_r($params);
  
 if (isset($params->guess)) {
   $answer = $params->answer;
-  $word5   = $params->word;
+  $word1   = $params->word;
   $letter = $params->letter;
  
-  $answer = replaceWithLetters($answer, $word5, $letter); 
+  $answer = replaceWithLetters($answer, $word, $letter); 
 } 
 else {
   // choose a random word
-  $word5 = $level5[ rand( 0, count($level5)-1 ) ];
+  $word = $level5[ rand( 0, count($level5)-1 ) ];
  
   // the initial answer has stars replacing the letters
-  $answer = stars($word5);
+  $answer = stars($word);
  
   $params->letter = "";
 }
@@ -41,16 +41,16 @@ form { margin: 10px 0; }
 </head>
 <body>
  
-<form action="index.php" method="get">
-<button type='submit'>New Game</button>
+<form action="level1.php" method="get">
+<button type='submit'>Level 5</button>
 </form>
  
 What is this word? 
 <p class='spacing'><?php echo $answer ?></p>
  
-<form action="index.php" method="post">
+<form action="level1.php" method="post">
   <input type="hidden" name="answer" value="<?php echo $answer?>" />
-  <input type="hidden" name="word5" value="<?php echo $word5?>" />
+  <input type="hidden" name="word1" value="<?php echo $word1?>" />
  
   Guess a letter:
   <select name="letter">

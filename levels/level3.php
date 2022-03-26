@@ -1,22 +1,22 @@
 <?php
-require_once "words.php";
-require_once "helpers.php";
+require_once "../levels.php";
+require_once "../helpers.php";
  
 $letters = range("a","z");
  
 $params = (object) $_REQUEST;
-print_r($params);
+// print_r($params);
  
 if (isset($params->guess)) {
   $answer = $params->answer;
-  $word   = $params->word;
+  $word1   = $params->word;
   $letter = $params->letter;
  
   $answer = replaceWithLetters($answer, $word, $letter); 
 } 
 else {
   // choose a random word
-  $word = $words[ rand( 0, count($level3)-1 ) ];
+  $word = $level3[ rand( 0, count($level3)-1 ) ];
  
   // the initial answer has stars replacing the letters
   $answer = stars($word);
@@ -41,16 +41,16 @@ form { margin: 10px 0; }
 </head>
 <body>
  
-<form action="index.php" method="get">
-<button type='submit'>New Game</button>
+<form action="level1.php" method="get">
+<button type='submit'>Level 3</button>
 </form>
  
 What is this word? 
 <p class='spacing'><?php echo $answer ?></p>
  
-<form action="index.php" method="post">
+<form action="level1.php" method="post">
   <input type="hidden" name="answer" value="<?php echo $answer?>" />
-  <input type="hidden" name="word3" value="<?php echo $word3?>" />
+  <input type="hidden" name="word1" value="<?php echo $word1?>" />
  
   Guess a letter:
   <select name="letter">

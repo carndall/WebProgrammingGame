@@ -9,7 +9,7 @@
     $lines = file("users.txt"); 
     foreach($lines as $line){
         if(strpos($line, $user) !== false){  // gets the users details 
-            header('location: index.php');
+            header('location: levels/level1.php');
         //    echo "Welcome " .$user; 
         }
        

@@ -1,11 +1,11 @@
 <?php
-require_once "/levels/index.php";
-require_once "helpers.php";
+require_once "../levels.php";
+require_once "../helpers.php";
  
 $letters = range("a","z");
- 
+
 $params = (object) $_REQUEST;
-print_r($params);
+// print_r($params);
  
 if (isset($params->guess)) {
   $answer = $params->answer;
@@ -16,11 +16,11 @@ if (isset($params->guess)) {
 } 
 else {
   // choose a random word
-  $word = $words[ rand( 0, count($level1)-1 ) ];
+  $word = $level1[ rand( 0, count($level1)-1 ) ];
  
   // the initial answer has stars replacing the letters
-  $answer = stars($word1);
- 
+  $answer = stars($word);
+
   $params->letter = "";
 }
 ?>
