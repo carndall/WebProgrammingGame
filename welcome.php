@@ -1,48 +1,48 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+        <title> Jeopardy GSU  </title>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <link href="style.css" text="stylesheet">
+    </head>
 
-  <title>Jeopardy GSU</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-</head>
+	<body>
+		<div class="main">
+			<h1> Jeopardy GSU </h1>
+			
+			<br>
+			
+				<div>
+				
+					<form action="login-submit.php" method="post">
+						<fieldset>
+							<legend>Returning User:</legend>
+							<label> Name: </label>
+							<input name="name" type="text" class="Input" value="<?php if(isset($_COOKIE['user'])) echo $_COOKIE['user'];?>">
+							<p>
+								<input type="submit" value="Login" class="Button">
+							</p>
+						</fieldset>
+					</form>
 
-<body>
+				</div>
+				<br>
+				<div>
+				
+					<form action="signup-submit.php" method="post">
+						<fieldset>
+							<legend>New User:</legend>
+							<label> Name: </label>
+							<input name="name" type="text" class="Input">
+							<p>
+								<input type="submit" value="Signup" class="Button">
+							</p>
+						</fieldset>
+					</form>
 
-	<h1> Jeapardy GSU </h1>
-	
-	<br>
-	
-	    <div>
-        
-			<form action="login-submit.php" method="post">
-				<fieldset>
-					<legend>Returning User:</legend>
-					<label> Name: </label>
-					<input name="name" type="text" class="Input" value="<?php if(isset($_COOKIE['user'])) echo $_COOKIE['user'];?>">
-					<p>
-						<input type="submit" value="Login" class="Button">
-					</p>
-				</fieldset>
-            </form>
-
-        </div>
-		<br>
-		<div>
-        
-			<form action="signup-submit.php" method="post">
-				<fieldset>
-					<legend>New User:</legend>
-					<label> Name: </label>
-					<input name="name" type="text" class="Input">
-					<p>
-						<input type="submit" value="Signup" class="Button">
-					</p>
-				</fieldset>
-            </form>
-
-        </div>
-</body>
+				</div>
+			</div>
+	</body>
 </html>

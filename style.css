@@ -16,3 +16,40 @@ td,th{
 {
     color: gold;
 }
+body{
+    border: 5px solid rgb(66, 177, 168);
+    padding: 20px 40px 60px 90px;
+    background-image: url("background_pic.jpeg");
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 90px;
+    font-size: 30px;
+    margin: 0px;
+    /* background-size:500px; */
+    /* background-position: 100%; */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+form, fieldset{
+    background-color: rgb(66, 177, 168);
+    border-radius: 25px;
+}
+.Button{
+    font-size: 30px;
+}
+.question{
+    border: 0px;
+}
+.question form{
+    border: 0px;
+}
+.answer{
+    border: 0px;
+}
+.answer form{
+    border: 0px;
+}

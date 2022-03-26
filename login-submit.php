@@ -4,12 +4,11 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Jeopardy GSU</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-</head>
+        <title> Jeopardy GSU  </title>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <link href="style.css" text="stylesheet">
+    </head>
 
 <body>
 	<?php
@@ -31,7 +30,7 @@
 		}
 	?>
 	
-	<h1> Welcome back, <?php echo $_POST['name'];?> </h1>
+	<h2> Welcome back, <?php echo $_POST['name'];?> </h2>
 	
 	<br>
 	
