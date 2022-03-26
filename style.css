@@ -12,3 +12,7 @@ table{
 td,th{
     border:2px solid black;
 }
+.categories a
+{
+    color: gold;
+}
