@@ -4,6 +4,8 @@
 <p>Team members: Chihumeya Eresia-Eke, Sade Nesmith, Christopher Arndall</p>
 
 Desciption: Create a Jeopardy game with only HTML/CSS and PHP 
+<br>
+<br>
 How to Play: This is a jeopardy game where you lose points for missing a question and gain points for getting it correct
 
 <b>*Begin on the welcome page*</b>
