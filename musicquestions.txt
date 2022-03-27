@@ -1,0 +1,4 @@
+John Paul George and Ringo are all members of which band?,The Beatles,200
+Which artist sings 'All I Want For Christmas'?,Mariah Carey,400
+What is the last name of a famous composer known for being deaf?,Beethoven,600
+What year did Elvis Presley die?,1977,800

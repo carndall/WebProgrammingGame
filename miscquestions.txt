@@ -1,0 +1,4 @@
+What type of species are frogs?,Amphibian,200
+The COVID precaution required individuals to stay how many feet apart while social distancing?,6,400
+"Racecar" is an example of what kind of word?,Palindrome,600
+What year did Philadelphia become the capital of the US?,1790,800

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<?php setcookie("user", $_POST["name"], time() + (86400 * 30), "/");?>
+<?php setcookie("user", $_POST["name"]);?>
 
 <html lang="en">
 <head>

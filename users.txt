@@ -1,5 +1,3 @@
-Chris Arndall,0
+Chris Arndall,-2800
 Camden Arndall,0
-Brooke Arndall,0
-Greg Arndall,0
-James,0
+Brooke Arndall,600

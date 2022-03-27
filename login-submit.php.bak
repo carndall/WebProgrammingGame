@@ -46,6 +46,7 @@
 
 <body>
 	<?php
+		print_r($_POST);
 		//creating array displayed on the leaderboard
 		$lboard = array("Name" => "Points" . PHP_EOL);
 		if ($file = fopen("users.txt", "r")) {
