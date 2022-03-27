@@ -43,52 +43,52 @@
         <div class="categories">
         <table>
             <tr>
-                <th style="background: blue; color:white"> Music </th>
-                <th style="background: blue; color:white"> Sports </th>
-                <th style="background: blue; color:white"> Misc </th>
+                <th> Music </th>
+                <th> Sports </th>
+                <th> Misc </th>
             </tr>
             <form action="question.php" method="post">
 			<tr>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("0,0", 200); ?>
 				</td>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("1,0", 200); ?>
 				</td>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("2,0", 200); ?>
 				</td>
             </tr>
             <tr>
-				<td style="background:blue">
+				<td>
 					<?php printQuestion("0,1", 400); ?>
 				</td>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("1,1", 400); ?>
 				</td>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("2,1", 400); ?>
 				</td>
             </tr>
             <tr>
-				<td style="background:blue">
+				<td>
 					<?php printQuestion("0,2", 600); ?>
 				</td>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("1,2", 600); ?>
 				</td>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("2,2", 600); ?>
 				</td>
             </tr>
             <tr>
-				<td style="background:blue">
+				<td>
 					<?php printQuestion("0,3", 800); ?>
 				</td>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("1,3", 800); ?>
 				</td>
-                <td style="background:blue">
+                <td>
 					<?php printQuestion("2,3", 800); ?>
 				</td>
             </tr>
