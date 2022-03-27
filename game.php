@@ -37,9 +37,6 @@
         <link href="style.css" text="stylesheet">
     </head>
     <body>
-		<pre>
-			<?php print_r($_COOKIE);?>
-		</pre>
         <h1> Jeopardy </h1>
         <h2> <u> Choose a Question </u> </h2>
 
